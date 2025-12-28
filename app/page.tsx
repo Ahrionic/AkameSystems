@@ -1,9 +1,22 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        Akame Systems
-      </main>
+    <div>
+      <div className="w-full">
+        <Image
+          src="/images/Firefly_Gemini_Flash.png"
+          alt="Banner"
+          width={1920}
+          height={400}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
+        <h1>Hello</h1>
+      </div>
     </div>
   );
 }
